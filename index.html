@@ -9,6 +9,10 @@
     <script type="text/javascript" src="tabletop.js"></script>
     <script type="text/javascript" src="mapsheet.js"></script>
 
+<b>simplegdocserver Demo</b><br />
+<a href="https://github.com/SheetJS/sgds">Github Repo</a><br />
+<a href="https://github.com/SheetJS/sgds/issues">Issues?  Something look weird?  Click here and report an issue</a><br />
+<p>This demo is taken from the <a href="https://raw2.github.com/jsoma/mapsheet/master/README.md">mapsheet README</a> and connects to a demo server.  To verify, on Chrome you can look at the network developer tool.</p>
     <!-- This is where the map will go -->
     <div id="map"></div>
 
@@ -39,8 +43,7 @@
 
         // OK, now let's make the map
         var map = Mapsheet({
-          //endpoint:"http://my.sheetjs.com",
-          endpoint:"http://localhost:7263",
+          endpoint:"http://my.sheetjs.com",
           singleton:true,
 		  key: "locations.xls",
           element: "map",
@@ -48,5 +51,18 @@
         });
       });
     </script>
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-36810333-1']);
+  _gaq.push(['_setDomainName', 'sheetjs.com']);
+  _gaq.push(['_setAllowLinker', true]);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
   </body>
 </html>
