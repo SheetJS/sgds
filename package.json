@@ -1,6 +1,6 @@
 {
 	"name": "simplegdocserver",
-	"version": "0.0.0",
+	"version": "0.0.1",
 	"author": "sheetjs",
 	"description": "Simple REST Server that fakes Google Docs interface for reading data",
 	"keywords": [ "xls", "xlsx", "xlsb", "xlsm", "excel", "spreadsheet", "google-docs", "gdata" ],
@@ -8,7 +8,7 @@
 	"license": "Apache-2.0",
 	"repository": { "type":"git", "url":"https://github.com/sheetjs/sgds" },
 	"dependencies": {
-		"j": "~0.2.3",
+		"j": "~0.2.6",
 		"browserver-router": "~0.1.1",
 		"cors": "~2.1.1",
 		"connect": "~2.12.0"
